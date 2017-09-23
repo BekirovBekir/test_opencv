@@ -1,0 +1,1 @@
+C:\SysGCC\Raspberry\bin\arm-linux-gnueabihf-gcc.exe -O3 -DNDEBUG  -rdynamic CMakeFiles/power_test.dir/main.o CMakeFiles/power_test.dir/ComPort.o CMakeFiles/power_test.dir/GPIO.o CMakeFiles/power_test.dir/ModemSARA.o CMakeFiles/power_test.dir/FrameBuffer.o  -o power_test -lpthread 
