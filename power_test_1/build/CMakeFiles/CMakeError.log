@@ -1,20 +1,20 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: D:/Eclipse for RPi/power_test(cmake)/power_test_1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/msys64/mingw64/bin/mingw32-make.exe" "cmTC_299da/fast"
-C:/msys64/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_299da.dir\build.make CMakeFiles/cmTC_299da.dir/build
+Run Build Command:"C:/msys64/mingw64/bin/mingw32-make.exe" "cmTC_7fe38/fast"
+C:/msys64/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_7fe38.dir\build.make CMakeFiles/cmTC_7fe38.dir/build
 mingw32-make.exe[1]: Entering directory 'D:/Eclipse for RPi/power_test(cmake)/power_test_1/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_299da.dir/CheckSymbolExists.c.o
-C:\SysGCC\Raspberry\bin\arm-linux-gnueabihf-gcc.exe    -o CMakeFiles\cmTC_299da.dir\CheckSymbolExists.c.o   -c "D:\Eclipse for RPi\power_test(cmake)\power_test_1\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
-Linking C executable cmTC_299da
-C:\msys64\mingw64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_299da.dir\link.txt --verbose=1
-C:\SysGCC\Raspberry\bin\arm-linux-gnueabihf-gcc.exe      -rdynamic CMakeFiles/cmTC_299da.dir/CheckSymbolExists.c.o  -o cmTC_299da 
-CMakeFiles/cmTC_299da.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTC_7fe38.dir/CheckSymbolExists.c.o
+C:\SysGCC\Raspberry\bin\arm-linux-gnueabihf-gcc.exe    -o CMakeFiles\cmTC_7fe38.dir\CheckSymbolExists.c.o   -c "D:\Eclipse for RPi\power_test(cmake)\power_test_1\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+Linking C executable cmTC_7fe38
+C:\msys64\mingw64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_7fe38.dir\link.txt --verbose=1
+C:\SysGCC\Raspberry\bin\arm-linux-gnueabihf-gcc.exe      -rdynamic CMakeFiles/cmTC_7fe38.dir/CheckSymbolExists.c.o  -o cmTC_7fe38 
+CMakeFiles/cmTC_7fe38.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x38): undefined reference to `pthread_create'
 collect2.exe: error: ld returned 1 exit status
-mingw32-make.exe[1]: *** [CMakeFiles\cmTC_299da.dir\build.make:97: cmTC_299da] Error 1
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_7fe38.dir\build.make:97: cmTC_7fe38] Error 1
 mingw32-make.exe[1]: Leaving directory 'D:/Eclipse for RPi/power_test(cmake)/power_test_1/build/CMakeFiles/CMakeTmp'
-mingw32-make.exe: *** [Makefile:125: cmTC_299da/fast] Error 2
+mingw32-make.exe: *** [Makefile:125: cmTC_7fe38/fast] Error 2
 
 File D:/Eclipse for RPi/power_test(cmake)/power_test_1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -34,18 +34,18 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: D:/Eclipse for RPi/power_test(cmake)/power_test_1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/msys64/mingw64/bin/mingw32-make.exe" "cmTC_0d1a9/fast"
-C:/msys64/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_0d1a9.dir\build.make CMakeFiles/cmTC_0d1a9.dir/build
+Run Build Command:"C:/msys64/mingw64/bin/mingw32-make.exe" "cmTC_8c8c6/fast"
+C:/msys64/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_8c8c6.dir\build.make CMakeFiles/cmTC_8c8c6.dir/build
 mingw32-make.exe[1]: Entering directory 'D:/Eclipse for RPi/power_test(cmake)/power_test_1/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0d1a9.dir/CheckFunctionExists.c.o
-C:\SysGCC\Raspberry\bin\arm-linux-gnueabihf-gcc.exe   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles\cmTC_0d1a9.dir\CheckFunctionExists.c.o   -c C:\msys64\mingw64\share\cmake-3.8\Modules\CheckFunctionExists.c
-Linking C executable cmTC_0d1a9
-C:\msys64\mingw64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_0d1a9.dir\link.txt --verbose=1
-C:\SysGCC\Raspberry\bin\arm-linux-gnueabihf-gcc.exe  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_0d1a9.dir/CheckFunctionExists.c.o  -o cmTC_0d1a9 -lpthreads 
+Building C object CMakeFiles/cmTC_8c8c6.dir/CheckFunctionExists.c.o
+C:\SysGCC\Raspberry\bin\arm-linux-gnueabihf-gcc.exe   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles\cmTC_8c8c6.dir\CheckFunctionExists.c.o   -c C:\msys64\mingw64\share\cmake-3.8\Modules\CheckFunctionExists.c
+Linking C executable cmTC_8c8c6
+C:\msys64\mingw64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_8c8c6.dir\link.txt --verbose=1
+C:\SysGCC\Raspberry\bin\arm-linux-gnueabihf-gcc.exe  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_8c8c6.dir/CheckFunctionExists.c.o  -o cmTC_8c8c6 -lpthreads 
 c:/sysgcc/raspberry/bin/../lib/gcc/arm-linux-gnueabihf/4.9/../../../../arm-linux-gnueabihf/bin/ld.exe: cannot find -lpthreads
 collect2.exe: error: ld returned 1 exit status
-mingw32-make.exe[1]: *** [CMakeFiles\cmTC_0d1a9.dir\build.make:97: cmTC_0d1a9] Error 1
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_8c8c6.dir\build.make:97: cmTC_8c8c6] Error 1
 mingw32-make.exe[1]: Leaving directory 'D:/Eclipse for RPi/power_test(cmake)/power_test_1/build/CMakeFiles/CMakeTmp'
-mingw32-make.exe: *** [Makefile:125: cmTC_0d1a9/fast] Error 2
+mingw32-make.exe: *** [Makefile:125: cmTC_8c8c6/fast] Error 2
 
 

@@ -49,4 +49,5 @@ void Fill_Buffer(unsigned char r, unsigned char g, unsigned char b)
 			//usleep(1000);
 			}
 		}
+	close(fb_fd);
 }
