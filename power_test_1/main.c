@@ -248,6 +248,6 @@ int main(int argc, char* argv[])
 
 	//printf ("\r\n===== Power Test is over =====\r\n");
 
-	Fill_Buffer(0x00, 0x80, 0xFF);
+	Fill_Buffer(0x00, 0x80, 0xFF); // fill display
 	return 1;
 }
