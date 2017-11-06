@@ -145,7 +145,7 @@ int Set_I_Charge (int level)
 	usleep(200000);
 	system("chmod +rw /sys/class/power_supply/ltc4015-node-charger/constant_charge_current");
 	usleep(200000);
-	system("i2cset -y -f 2 0x68 0x29 0x00 w");
+	//system("i2cset -y -f 2 0x68 0x29 0x00 w");
 
 	fd=open("/sys/class/power_supply/ltc4015-node-charger/input_current_limit", O_WRONLY); // must be change
 	if (fd==-1)
@@ -153,7 +153,7 @@ int Set_I_Charge (int level)
 		perror("\r\nError while opening Charge module");
 		return -1;
 	}
-	if (write(fd, "9000000", 7)!=7)
+	if (write(fd, "2000000", 7)!=7)
 	{
 		perror("\r\nError while writing charge current");
 		return -1;
@@ -168,9 +168,9 @@ int Set_I_Charge (int level)
 	}
 
 	memset(buf, 0, GPIO_BUF_SIZE);
-	if ((level>=1)&&(level<=32))
+	if ((level>=1)&&(level<=20))
 	{
-	buf_I=219000*level;
+	buf_I=100000*level;
 		cnt_byte=snprintf(buf, sizeof(buf), "%ld", buf_I);
 		if (write(fd, buf, cnt_byte)!=cnt_byte)
 		{
